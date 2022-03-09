@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="6" total="7" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Open Browser "OrangeHRM" web page]]>
@@ -10,42 +10,55 @@
     <line>
       <![CDATA[Validate that you have logged in successfully]]>
     </line>
-    <line>
-      <![CDATA[Click Admin - Go to the admin page]]>
-    </line>
-    <line>
-      <![CDATA[Search username in field "Username]]>
-    </line>
-    <line>
-      <![CDATA[Click search]]>
-    </line>
-    <line>
-      <![CDATA[Verifiy username exists in table]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-03-02T22:22:23Z" name="Default suite" finished-at="2022-03-02T22:22:33Z" duration-ms="9309">
+  <suite started-at="2022-03-07T19:10:58Z" name="Default suite" finished-at="2022-03-07T19:11:22Z" duration-ms="24001">
     <groups>
     </groups>
-    <test started-at="2022-03-02T22:22:23Z" name="Default test" finished-at="2022-03-02T22:22:33Z" duration-ms="9309">
+    <test started-at="2022-03-07T19:10:58Z" name="Default test" finished-at="2022-03-07T19:11:22Z" duration-ms="24001">
       <class name="com.opensource.qa.Admin">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.opensource.qa.Admin@3406472c]" started-at="2022-03-02T22:22:23Z" name="beforeTest" finished-at="2022-03-02T22:22:23Z" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.opensource.qa.Admin@3c01cfa1]" started-at="2022-03-07T19:10:58Z" name="beforeTest" finished-at="2022-03-07T19:10:58Z" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="tc001AdminSearchEmployee()[pri:0, instance:com.opensource.qa.Admin@3406472c]" started-at="2022-03-02T22:22:23Z" name="tc001AdminSearchEmployee" finished-at="2022-03-02T22:22:33Z" duration-ms="9272" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="tc005AdminCreateUserDisabled()[pri:0, instance:com.opensource.qa.Admin@3c01cfa1]" started-at="2022-03-07T19:10:58Z" name="tc005AdminCreateUserDisabled" finished-at="2022-03-07T19:11:22Z" duration-ms="23979" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [Admon] but found [Admin]]]>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-GNU96NS8', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\itaty\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50305}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19a96947ae601e18fbb538dda5604e60
+*** Element info: {Using=xpath, value=//a[@id='welcome']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Admon] but found [Admin]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.opensource.qa.Admin.tc001AdminSearchEmployee(Admin.java:63)
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-GNU96NS8', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\itaty\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50305}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19a96947ae601e18fbb538dda5604e60
+*** Element info: {Using=xpath, value=//a[@id='welcome']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.opensource.qa.Admin.tc005AdminCreateUserDisabled(Admin.java:322)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,7 +86,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
             <line>
               <![CDATA[Open Browser "OrangeHRM" web page]]>
@@ -84,21 +97,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <line>
               <![CDATA[Validate that you have logged in successfully]]>
             </line>
-            <line>
-              <![CDATA[Click Admin - Go to the admin page]]>
-            </line>
-            <line>
-              <![CDATA[Search username in field "Username]]>
-            </line>
-            <line>
-              <![CDATA[Click search]]>
-            </line>
-            <line>
-              <![CDATA[Verifiy username exists in table]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- tc001AdminSearchEmployee -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.opensource.qa.Admin@3406472c]" started-at="2022-03-02T22:22:33Z" name="afterTest" finished-at="2022-03-02T22:22:33Z" duration-ms="0" status="PASS">
+        </test-method> <!-- tc005AdminCreateUserDisabled -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.opensource.qa.Admin@3c01cfa1]" started-at="2022-03-07T19:11:22Z" name="afterTest" finished-at="2022-03-07T19:11:22Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
